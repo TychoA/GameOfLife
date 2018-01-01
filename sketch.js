@@ -75,32 +75,6 @@ class GameOfLife {
     };
 
     /**
-     *  Get a coordinates state
-     * 
-     *  @param   int  x coordinate
-     *  @param   int  y coordinate
-     *  @return  int
-     */
-    getState (x, y) {
-        
-        // get the state
-        return this.grid.get([x, y]);
-    };
-
-    /**
-     *  Set a coordinates state
-     * 
-     *  @param  int  x coordinate
-     *  @param  int  y coordinate
-     *  @param  int  the new state
-     */
-    setState (x, y, state) {
-
-        // set the new state
-        this.grid.set([x, y], state);
-    };
-
-    /**
      *  Randomize the grid's data point states.
      */
     randomize () {
